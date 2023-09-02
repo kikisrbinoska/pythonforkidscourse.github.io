@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+html, body {
+    overflow-x: hidden;
+}
+.container {
+    /* width: 1800px;
+     height: 810px; */
+    padding-right:8% ;
+    padding-left: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: linear-gradient(180deg, #511F74 0%, #F3BE22 100%);
+}
+.navbar {
+    width: 1800px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: #511F74;
+    margin-left: -127px;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 280px;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    padding-left: -40px;
+}
+
+nav ul {
+    margin-right: 300px; /* Adjust this value as needed to add some space between the links */
+    list-style: none;
+    white-space: nowrap; /* Prevent line breaks in the nav items */
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 10px; /* Adjust this value as needed to add some space around the links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F29627;
+    font-size: 26px;
+    font-weight: 500;
+}
+.heading h1 {
+    width: 1209px;
+    height: 59px;
+    color: #F3BE22;
+    font-size: 42px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 147.187%; /* 62.66px */
+    letter-spacing: 4.257px;
+    text-transform: uppercase;
+    margin-top: 28px;
+    margin-left: 50px;
+}
+.row_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    width: 450px;
+    margin-top: 20px;
+
+}
+.image img{
+    width: 146px;
+    height: 146px;
+    flex-shrink: 0;
+}
+.col_1 {
+    margin-right: 150px;
+    margin-left: 150px;
+}
+.col_2 {
+    margin-right: 150px;
+}
+.col_3 {
+    margin-right: 150px;
+}
+.col_4 {
+    margin-right: 150px;
+}
+.footer {
+    background: #511F74;
+    height: 150px;
+    width: 1800px;
+    margin-left: -150px;
+    position: relative;
+}
+.patern-footer img {
+    width: 1800px;
+    height: 150px;
+    flex-shrink: 0;
+    margin-left: 30px;
+}
+.slika-footer img {
+    width: 1243px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 170px;
+}
+.row_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.col1 {
+    margin-left: -70px;
+    width: 1000px;
+    margin-bottom: 20px;
+}
+.col1 h2  {
+    color: #3D0062;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 108.333% */
+}
+.col1 p {
+    color: #3D0062;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 108.333% */
+
+}
+.col2 {
+    margin-bottom: 80px;
+}
+.name {
+    color: #F3BE22;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px; /* 118.182% */
+}
+.col_1 {
+    margin-top: 20px;
+}
+.col_1 p {
+    margin-top: 15px;
+    color: #F3BE22;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+}
+.col_2 {
+    margin-top: -25px;
+}
+.col_2 p {
+    margin-top: 15px;
+    color: #F3BE22;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+}
+.col_3 p {
+    margin-top: 15px;
+    color: #F3BE22;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+}
+.col_4 p {
+    margin-top: 15px;
+    color: #F3BE22;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+}
+.col2 h2  {
+    color: #3D0062;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 108.333% */
+}
+.col2 p {
+    color: #3D0062;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 108.333% */
+
+}
+.footer-text {
+    position: absolute;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #F3BE22;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center
+}

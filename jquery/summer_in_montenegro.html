@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Malo Budva,ovo ono</title>
+    <script src="jquery.js"></script>
+    <script src="jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui.theme.css">
+</head>
+<style>
+    #gradovi li {
+        display: inline-block;
+        width: 115px;
+        margin: auto;
+        text-align: center;
+        border: 1px solid hotpink;
+    }
+    #gradovi {
+        margin-left: 450px;
+    }
+    li:hover {
+        color: plum;
+        font-weight: bold;
+        background-color: lavender;
+    }
+    #datumi,#dvopanel,#listb {
+        display: inline-block;
+        width: 250px;
+        border: 1px solid dodgerblue;
+        vertical-align: center;
+    }
+    #details {
+        display: inline-block;
+        width: 250px;
+        vertical-align: top;
+        border: 1px solid dodgerblue;
+        margin-top: 15px;
+    }
+</style>
+<script>
+    $(document).ready(function ()
+    {
+        $("#details").hide()
+        $("#datumi").hide()
+        $("#dvopanel").hide()
+        $("#listb").hide()
+
+        $("#gradovi").click(function ()
+        {
+            getData($(this).attr("title"))
+            $("#gradovi").hide()
+            $("#datumi").show()
+            $("#listb").show()
+        })
+        function getData(id)
+        {
+            $.ajax({
+                url:"https://api.allorigns.win/get?url=https://www.metweather.com/api/location/"+id+"/",
+                dataType:"jsonp",
+                success: function ()
+                {
+
+                }
+            })
+        }
+    })
+</script>
+<body>
+<ul id="gradovi">
+    <li title="444418">London</li>
+    <li title="2487956">San Francisco</li>
+    <li title="615702">Paris</li>
+    <li title="212265">Moscow</li>
+    <li title="1118370">Tokyo</li>
+</ul>
+<ul id="datumi">
+
+</ul>
+<ul id="dvopanel">
+
+</ul>
+<ul id="listb"></ul>
+<div id="details">
+    <p>Weather:<span id="weather"></span></p>
+    <p>Max Temperature:<span id="maxtemp"></span></p>
+    <p>Humidity:<span id="humidity"></span></p>
+</div>
+</body>
+</html>

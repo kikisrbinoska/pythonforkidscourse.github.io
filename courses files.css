@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+html, body {
+  /*  overflow-x: hidden;
+    overflow-y: hidden; */
+    overflow: visible;
+}
+.container {
+    /* width: 1800px;
+     height: 810px; */
+    padding-right:8% ;
+    padding-left: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* background: linear-gradient(180deg, #F3BE22 10.73%, #511F74 54.48%); */
+    /* background-image: url("images/house.png");
+     background-position: center;
+     background-size: cover; */
+}
+.navbar {
+    width: 1800px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background: #511F74;
+    margin-left: -127px;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 280px;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    padding-left: -40px;
+}
+
+nav ul {
+    margin-right: 300px; /* Adjust this value as needed to add some space between the links */
+    list-style: none;
+    white-space: nowrap; /* Prevent line breaks in the nav items */
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 10px; /* Adjust this value as needed to add some space around the links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F29627;
+    font-size: 26px;
+    font-weight: 500;
+}
+.section {
+    margin-top: -20px;
+}
+.house img {
+    width: 1800px;
+    height: 1200px;
+margin-top: -160px;
+    margin-left: -130px;
+}
+.transparent img {
+    margin-top: -2000px;
+    width: 1800px;
+    height: 1040px;
+    margin-left: -130px;
+}
+#accordion {
+    margin-top: -1000px;
+
+}
+
+.rowD {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+
+}
+h1 {
+    color: #511F74;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px; /* 118.182% */
+}
+p {
+    color: #511F74;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 130% */
+    margin-left: 20px;
+}
+h3 {
+    color: #511F74;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 130% */
+}
+.video {
+    margin-left: 350px;
+}
+.footer {
+    background: #511F74;
+    height: 150px;
+    width: 1800px;
+    margin-left: -150px;
+    position: relative;
+}
+.patern-footer img {
+    width: 1800px;
+    height: 150px;
+    flex-shrink: 0;
+    margin-left: 30px;
+}
+.slika-footer img {
+    width: 1243px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 170px;
+}
+.footer-text {
+    position: absolute;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #F3BE22;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center
+}
